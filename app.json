@@ -1,4 +1,9 @@
 {
   "name": "Exercicio",
-  "slug": "Exercicio"
+  "slug": "Exercicio",
+  "plugins": [
+    "expo-router",
+    "expo-sqlite"
+  ]
+  
 }
