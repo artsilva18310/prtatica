@@ -1,6 +1,7 @@
 {
   "name": "Exercicio",
   "slug": "Exercicio",
+  "scheme": "Exercicio",
   "plugins": [
     "expo-router",
     "expo-sqlite"

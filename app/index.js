@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { View, Text, Button, TouchableOpacity } from "react-native";
+import { View, Text, Button } from "react-native";
 import { Link } from "expo-router";
 
 export default function Home() {
@@ -12,9 +12,10 @@ export default function Home() {
       <Button title="Somar +1" onPress={() => setCount((c) => c + 1)} />
 
       <Link href="/segunda" asChild>
-        <TouchableOpacity style={{ marginTop: 16, backgroundColor: "#007bff", padding: 10, borderRadius: 6 }}>
-          <Text style={{ color: "#fff" }}>Ir para a 2ª tela</Text>
-        </TouchableOpacity>
+        <Button title="Ir para a 2ª tela" />
+      </Link>
+      <Link href="/sqlite" asChild>
+        <Button title="Ir para a 3ª tela" />
       </Link>
     </View>
   );
