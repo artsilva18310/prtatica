@@ -7,15 +7,10 @@ export default function Home() {
 
   return (
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center", gap: 12 }}>
-      <Text style={{ fontSize: 18 }}>Home (Hooks)</Text>
-      <Text>Contagem: {count}</Text>
-      <Button title="Somar +1" onPress={() => setCount((c) => c + 1)} />
-
-      <Link href="/segunda" asChild>
-        <Button title="Ir para a 2ª tela" />
-      </Link>
+      <Text style={{ fontSize: 18 }}>Tela inicial</Text>
+    
       <Link href="/sqlite" asChild>
-        <Button title="Ir para a 3ª tela" />
+        <Button title="Clique para entrar(lá ele)" />
       </Link>
     </View>
   );
